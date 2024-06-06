@@ -13,9 +13,11 @@ const App = () => {
 
 return (
     <>
-        <div className={"container"}>
-            <UserForm onSubmit={addUser}/>
-            <Users users={users}/>
+        <div className={"container-fluid"}>
+            <div className="row mt-2 d-flex justify-content-between">
+                <div className="col-3 border border-2 rounded-3 p-3 h-100"> <UserForm onSubmit={addUser}/></div>
+                <div className="d-flex align-items-center flex-column col-7 border border-2 rounded-3 p-3"> <Users users={users}/></div>
+            </div>
         </div>
     </>
 );

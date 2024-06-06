@@ -68,20 +68,20 @@ const UserForm: React.FC<Props> = ({onSubmit}) => {
                     value={userMutation.email}
                 />
             </div>
-            <div className={"form-group"}>
-                <label htmlFor="active">
+            <div className={"form-group d-flex align-items-center justify-content-center"}>
+                <label htmlFor="active" className="active mb-1 me-2">
                     Активен:
                 </label>
                 <input
                     type="checkbox"
                     name="active"
                     id="active"
-                    className="form-control"
+                    className="checkbox"
                     onChange={changeBooleanValue}
                    checked={userMutation.active}
                 />
             </div>
-            <div className={"form-group"}>
+            <div className={"form-group mb-3"}>
                 <label htmlFor="role">
                     Роль:
                 </label>

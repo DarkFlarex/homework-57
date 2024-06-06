@@ -15,11 +15,11 @@ const UserList: React.FC<Props> = ({user}) => {
     };
 
     return (
-        <div className="UserList">
-            <span>Имя:{user.name}</span>
-            <span>Email:{user.email}</span>
-            <span>Активен: {showActive(user.active)}</span>
-            <span>Роль:{user.role}</span>
+        <div className="UserList col-5 row p-3 border border-2 rounded-3 p-3 mb-3">
+            <span className="user-name p-2 mb-2 border border-2 rounded-3">Имя: {user.name}</span>
+            <span className="user-email p-2 mb-2 border border-2 rounded-3">Email: {user.email}</span>
+            <span className="user-active p-2 mb-2 border border-2 rounded-3">Активен: {showActive(user.active)}</span>
+            <span className="user-role p-2 mb-2 border border-2 rounded-3">Роль: {user.role}</span>
         </div>
     );
 };
